@@ -12,15 +12,41 @@ draw = function(){
   triangle(200, 104, 280, 280, 120, 280);
   fill(255, 255, 255);
   
+
   if (answer == 1) {
-    text("YOUR", 176, 200);
-    text("MESSAGE", 159, 229); 
+    text("hello", 176, 200);
   }
   
+  if (answer == 2) {
+  text("goodbye", 176, 200);
+  }
+  
+  if (answer == 3) {
+  text("🏎️", 176, 200);
+  }
+  
+  
+
+  fill(255,200,255);
+  ellipse(mouseX, mouseY, 50, 50);
+  
+  
+  if(mousePressed){
+  text("Owen is the best", random(0,600), random(0,400));
+  }
+
+
 };
 
+
+//var drawTrain = function(trainX, trainY){
+//textSize(40);
+//text("🏎️", trainX, trainY)
+//}
+
 mouseClicked = function(){
-  answer = round(random(1, 5));
+  answer = round(random(1, 3));
 };
+
 
 
